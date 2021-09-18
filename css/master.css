@@ -67,8 +67,11 @@ main {
 
 #appIcon {
   width: 30%;
+
   max-width: 15em;
   min-width: 10em;
+  min-height: 10em;
+  max-height: 15em;
 
 }
 
@@ -91,12 +94,13 @@ font-weight: normal;
 
 .horizontalFlow {
   display: flex;
-  height: 10%;
+  /* height: 10%; */
   /* background-color: #65bef0; */
   color: #ffffff;
   align-items: flex-flex-start;
   justify-content: space-around;
   padding: 1.5em;
+  min-width: 40em;
 }
 
 #promoText {
