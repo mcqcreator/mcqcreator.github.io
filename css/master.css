@@ -4,106 +4,209 @@
   moz-box-sizing: border-box;
   webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: Helvetica;
+  font-family: Helvetica Neue;
 }
 
-body {
-  font-size: 1em;
-}
-
-main {
-  padding: 40px 40px 40px 40px;
-}
-
-
-#privacyPolicyHeading {
-  color: #204475;
-  text-align: center;
-  padding-bottom: 2%;
-}
-
-#updateDate {
-  font-size: 110%;
-  text-align: center;
-  color: #204475;
-  padding: 2%;
-}
-
-#privacyIntro {
+.container {
   padding-top: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
   padding-bottom: 2em;
+  background-color: #16151A;
+  color: white;
 }
 
+#introText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: space-around; */
+  /* background-color: lightGray; */
+  /* height: 5em; */
+  /* justify-content: center; */
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
 
+#introText h1 {
+  font-size: 2.2em;
+  font-weight: normal;
+}
 
-.lightContent {
+#introText h5 {
   font-size: 1.3em;
-  color: #3C5E8E;
-  font-weight: lighter;
-  text-align: justify;
+  font-weight: normal;
+  text-align: center;
+  width: 70%;
   padding-top: 0.8em;
-  padding-bottom: 2em;
-}
-
-.heading {
-  font-size: 1.4em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: #204475
-}
-
-
-
-
-.appInfo {
-  /* padding: 4em; */
-  /* background-color: #16151A; */
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-
 }
 
 #appIcon {
-  width: 30%;
-
-  max-width: 15em;
-  min-width: 10em;
-  min-height: 10em;
-  max-height: 15em;
-
-}
-
-#appTitle {
-  flex: 1;
-  padding: 30px;
-  color: black;
-}
-
-#appName {
-  font-size: 1.8em;
-font-weight: normal;
-}
-
-#appSubtitle {
-  font-size: 1.4em;
-  font-weight: lighter;
-  padding-top: 0.6em;
-}
-
-.horizontalFlow {
   display: flex;
-  /* height: 10%; */
-  /* background-color: #65bef0; */
-  color: #ffffff;
-  align-items: flex-flex-start;
-  justify-content: space-around;
-  padding: 1.5em;
-  min-width: 40em;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: darkGray; */
+  padding-top: 4em;
+  padding-bottom: 2em;
 }
 
-#promoText {
-  color: darkgray;
-  font-weight: lighter;
+/* App Icon image */
+#appIcon img {
+  width: 11em;
+  height: 11em;
+}
+
+/* App Name */
+#appIcon h2 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-weight: normal;
+}
+
+/* App Subtitle */
+#appIcon h6 {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+/* Download Button */
+#downloadButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  /* background-color: gray; */
+}
+
+#para {
+  padding-top: 3em;
+  padding-bottom: 6em;
+  font-size: 1.1em;
+  font-weight: normal;
+  text-align: justify;
+  line-height: 1.8em;
+  /* background-color: darkGray; */
+}
+
+#para1 {
+  /* background-color: lightGray; */
+}
+
+#para span {
+  color: #FF2E55;
+  font-weight: bold;
+}
+
+#para2 {
+  padding-top: 3em;
+  /* background-color: gray;  */
+}
+
+
+/* How Do I Create a MCQ */
+
+#howto {
+padding-top: 6em;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#howto h2 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: normal;
+  /* padding-bottom: 1em; */
+}
+
+#howto ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3.2em;
+}
+
+#howto li {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 2em;
+  /* align-content: center; */
+}
+
+.number {
+  width: 2em;
+  height: 2em;
+  /* background-color: gray; */
+  text-align: center;
+  margin-right: 2em;
+}
+
+#screenshots {
+  margin-top: 6em;
+  margin-bottom: 6em;
+  display: flex;
+  /* flex: 1; */
+  flex-direction: row;
+  /* overflow: auto; */
+  overflow-x: scroll;
+  margin-left: -3em;
+  margin-right: -3em;
+  padding-left: 3em;
+  /* padding-right: 3em; */
+  /* scroll-snap-type: x mandatory;
+  scroll-padding: 50px; */
+  /* overflow-x: hidden; */
+  /* overflow: scroll;
+  white-space: nowrap; */
+}
+
+#screenshots img {
+
+  height: 32em;
+  margin-right: 2em;
+  /* padding-right: 3em; */
+  /* display: inline-block; */
+}
+
+#other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8em;
+}
+
+#other a {
+  margin-bottom: 4em;
+  text-decoration: none;
+}
+
+#other a {
+  text-transform: uppercase;
+
+}
+
+#contactButton {
+  background-color: white;
+  color: #FF2E55;
+  font-weight: 300;
+  font-size: 1.3em;
+  padding: 0.4em 2.4em 0.4em 2.4em;
+  border-radius: 2em;
+}
+
+#privacyPolicyButton {
+  background-color: #FF2E55;
+  color: white;
+  font-weight: 300;
+  font-size: 1.3em;
+  padding: 0.4em 1.8em 0.4em 1.8em;
+  border-radius: 2em;
+}
+
+#copyright {
+  font-weight: 200;
+  font-size: 0.9em;
+  color: lightGray
 }
